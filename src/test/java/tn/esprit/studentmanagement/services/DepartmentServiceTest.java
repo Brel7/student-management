@@ -46,7 +46,7 @@ class DepartmentServiceTest {
         List<Department> result = departmentService.getAllDepartments();
 
         assertEquals(1, result.size());
-        assertEquals("MauvaisNom", result.get(0).getName());
+        assertEquals("Informatique", result.get(0).getName());
         verify(departmentRepository, times(1)).findAll();
     }
 
